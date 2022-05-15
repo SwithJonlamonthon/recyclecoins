@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roundo;
+    
+}
+@font-face {
+    font-family: 'Roundo';
+    src: url("/public/font/Roundo-Regular.ttf") format('truetype');
+}
+body{
+    margin: 15px;
+   
+ }
+
+    
+.profile-content-container li{
+    font-size: 18px;
+}
+
+
+
+/*This is responsive bar framework*/
+
+.bar-container{
+    height:100px;
+    background-color: #2ad56d;
+    animation-name: bar;
+    animation-duration: 5s;
+}
+
+
+
+
+
+.bar-container ul{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 0px;
+    
+    
+}
+
+.bar-container li{
+    margin-top: 20px;
+}
+
+/*For menu icon dropdown*/
+
+.profile-icon{
+    display:flex;
+    flex-direction:column;
+    
+    
+}
+
+.profile-icon-content{
+    position: relative;
+    width: 70px;
+    height: 60px;
+    background-color:black;
+    border-radius:50%;
+    margin-top: 0.5vw;
+    margin-right: 2vw;
+    
+    
+}
+
+
+.profile-content-container{
+    position:fixed;
+    display:flex;
+    border-radius: 50px 0 50px 0;
+    height:300px;
+    flex-direction:column;
+    right:1.2vw;
+    margin-top: 80px;
+    background-color:#ececec;
+    width: 30vw;
+    text-align: center;
+}
+
+.profile-content-dropdown{
+    display:flex;
+    flex-direction: column;
+    margin: 0 8px 0 8px;
+}
+
+.profile-content-container input{
+    border:none;
+    background-color:grey;
+    color:white;
+    height:30px;
+    margin : 10px 5px 5px 5px;
+}
+.profile-content-container button{
+    cursor:pointer;
+    text-align:center;
+    border:none;
+    color: white;
+    background-color:black;
+    width:30%;
+    margin : 10px 5px 10px 5px;
+    height:30px;
+}
+.profile-content-container p{
+    text-align:left;
+    margin : 0 5px 0 5px;
+}
+.profile-title{
+    padding: 20px 0 20px 0;
+    font-size: 20px;
+}
+
+
+
+.login{
+    display:block;
+}
+.notlogin,#notlogin{
+    display:none;
+}
+
+
+
+/*End of icon dropdown*/
+
+/*For menu icon dropdown*/
+.menu-icon{
+    
+    height: 70px;
+    
+}
+.menu-icon i{
+    position:fixed;
+    font-size: 50px;
+    color:white;
+    padding: 10px 10px 20px 10px;
+}
+.menu-icon:hover .menu-content-container a{
+    display:block;
+    font-size: 18px;
+}
+
+
+.menu-content-container{
+    position:absolute;
+    left:0px;
+    display:flex;
+    flex-direction: column;
+    background-color:red;
+    width: 20vw;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*End of menu icon dropdown*/
+
+.logo img{
+    width: 500px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+}
+
+ul .logo{
+    margin: 0px;
+    height: 100px;
+}
+
+
+
+
+
+/*End of responsive bar framework*/
+
+/*Start of footer*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+    padding-bottom: 20px;
+    
+}
+
+.footer-container,.footer-dot{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0 15px 0 15px;
+}
+.dot{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background-color:black;
+    margin-right:10px;
+}
+.screen-slide{
+    background-color:black;
+    height: 10px;
+    width: 20%;
+    
+}
+
+/*End of footer*/
+
+/*Map*/
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+/*table*/
+.container{overflow: hidden}
+.tab{float: left;}
+.tab-2{margin-left: 80px}
+.tab-2 input{margin-bottom: 20px}
+tr{transition:all .25s ease-in-out}
+tr:hover{background-color:#EEE;cursor: pointer}
+
+/*This is transition for res bar*/
+@keyframes bar {
+    from {opacity: 0.1;}
+    to {opacity: 1;}
+    }
+/*End of transition for res bar*/
+
+/*start set default font-family*/
+@font-face {
+    font-family:Roundo;
+    src:url('font\Roundo-Regular.woff2') format("woff"),
+    url("font\Roundo-Regular.ttf") format("truetype");
+}
+/*end of set default font-family*/
+ 
+
+/*start of set screen*/
+@media screen and (max-width: 700px){
+    .logo:not(:first-child) {display: none;}
+    .profile-icon:not(:first-child) {padding: 0px 0px 30px 0px;margin-bottom: 100px;}
+    
+}
+/*end of set screen*/

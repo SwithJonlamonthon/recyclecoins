@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication" content="">
+    <link rel="stylesheet" type="text/css" href="/public/css/styles.css">
+    <link rel="stylesheet"type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="/public/img/favicon.ico" sizes="32x32">
+        
+    </head>
+    <body>
+
+        <!--This is responsive bar-->
+
+        <div class="bar-container">
+            <ul>
+                <li class="menu-icon">
+                    <!--Emtry box-->
+                </li>
+                <li class="logo"><img src="/public/img/logo.png"></li>
+                <li class="profile-icon" id ="notlogin">
+                    <div class="profile-icon-content" >
+                        <div class="profile-content-container" style="display: none;">
+                            <!--Profile-content -->
+                            <div class="profile-content-dropdown" >
+                                <div class="profile-title">Login</div>
+                                <p class="profile-user">Username</p>
+                                <input type="text" class="form-control" id="username">
+                                <p class="profile-password">Password</p>
+                                <input type="password" class="form-control" id="password">
+                                <button class="btn btn-login">Login</button>
+                                <p>Can't login<a href="#">  sign up here</a></p> 
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+               
+            </ul>
+        </div>
+        <!--End of responsive bars-->
+
+        
+        <div class="container">
+            
+                <div class="tab tab-1">
+                    <table id="table" border="1">
+                        <tr>
+                            <th>Recycle waste</th>
+                            <th>Price/kg</th>
+                            <th>Weight</th>
+                            <th>Total</th>
+                            <th>Coin</th>
+                        </tr>
+                        
+                      
+                        
+                   </table><br>
+    
+                    Total = <span id="s_tot"></span><br>
+                    Weight = <span id="w_tot"></span><br>
+                        Coin = <span id="c_tot"></span><br><br>
+                    
+                   <button onclick="sum()">Total</button>
+                   
+                   <form action="/" method="get"><button >LOGOUT</button></form>
+     
+                </div>   
+            
+            
+            		
+            <div class="tab tab-2">
+            	<td>
+    			Garbage : <select name="opt1" id="opt1" onchange="populate(this.id,'opt2')">
+        			<option value="choose">choose</option>
+        			<option value="Iron">Iron</option>
+                    <option value="Scrap iron">Scrap iron</option>
+        			<option value="Pl">Plastic</option>
+        			<option value="Glass">Glass</option>
+        			<option value="Paper">Paper</option>
+                    <option value="Glass bottle">Glass bottle</option>
+                    <option value="Plastic bottle">Plastic bottle</option>
+                    <option value="Can">Can</option>
+
+    					</select>
+    			</td><br/><br/>
+    
+    			<td>
+    
+        			Price : <input type="text" id="opt2"> batht
+    			</td><br/>
+     
+    			<td>
+       				 Weight : <input type="text" id="input1"> kg
+    			</td><br/>
+    			<td>
+       				 Total : <input type="text" id="input2"> bath
+    			</td><br/>
+    			<td>
+        			Coin : <input type="text" id="input3"> coin
+    			</td><br/>
+                <button onclick="addHtmlTableRow()">Add</button>
+               
+            </div>
+        </div>
+        
+        
+        
+         
+        <script src="/public/js/index.js"></script>
+    </body>
+</html>

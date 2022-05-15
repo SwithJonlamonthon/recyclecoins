@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="msapplication" content="">
+        <link rel="stylesheet" type="text/css" href="/public/css/styles.css">
+        <link rel="stylesheet"type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="/public/img/favicon.ico" sizes="32x32">
+        
+        <title>Recycle Coin</title>
+
+    </head>
+    
+    <body>
+        <!--This is responsive bar-->
+
+        <div class="bar-container">
+            <ul>
+                <li class="menu-icon">
+                   
+                </li>
+                <li class="logo"><img src="/public/img/logo.png"></li>
+                <li class="profile" id="profile">
+                    <div class="profile-icon-content">
+                        <div class="profile-content-container" id ="profile-icon">
+                            <!--Profile-content -->
+                        <form action="/auth/user" method="POST">
+                            <div class="profile-content-dropdown" >
+                                <div class="profile-title">Login</div>
+                                <p class="profile-user">Username</p>
+                                <form action="/:username" method="GET"><input type="text" class="form-control" id="username" name = "username"></form>
+                                <p class="profile-password">Password</p>
+                                <input type="password" class="form-control" id="password" name = "password">
+                                <button class="btn btn-login" type = "submit">Login</button>
+                                
+
+                                </div>
+                            </form>
+                            <p>Can't login<form action='//register/user' method="GET"></form><button id="signup" type ="submit">  sign up here</button></form></p> 
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="notlogin" id ="register">
+                    <div class="profile-icon-content">
+                        <div class="profile-content-container" >
+                            <!--Profile-content -->
+                            <form action='/register/user' method="POST">
+                                <div class="profile-content-dropdown">
+                                    <div class="profile-title">Create account</div>
+                                    <p class="profile-user">Enter Username</p>
+                                    <input type="text" class="form-control" name="username_register">
+                                    <p class="profile-password" >Enter Password</p>
+                                    <input type="password" class="form-control" name="password_register">
+                                    <p class="profile-password">Re-enter Password</p>
+                                    <input type="password" class="form-control" name="secpassword_register">
+                                    <button type="submit" class="btn btn-login">Create</button>
+                              
+
+                                </div>
+                            </form> 
+                        </div>
+                    </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--End of responsive bars-->
+
+        
+
+        <!-- Start main content-->
+
+
+
+
+
+        <!-- End of main content-->
+        
+        
+        <!--start of footer-->
+
+        <footer>
+            <div class="footer-container">
+                <ul class="footer-dot" style="list-style-type: none;">
+                    <li class="dot"><a href=#></a></li>
+                    <li class="dot"><a href=#></a></li>
+                    <li class="dot"><a href=#></a></li>
+                    <li class="dot"><a href=#></a></li>
+
+                </ul>
+                <div class="screen-slide"></div>
+                <div class="version">1.0.0</div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+        </footer>
+        <script src="/public/js/index.js"></script>
+
+
+    </body>
+
+
+
+
+
+</html>
